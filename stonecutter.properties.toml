@@ -1,0 +1,22 @@
+# Propiedades compartidas por TODAS las versiones.
+# Ver https://stonecutter.kikugie.dev/wiki/config/properties#centralized-properties
+mod.id = "galyx"
+mod.name = "GALYX"
+mod.group = "com.galyx"
+mod.version = "0.10.0-beta"
+
+# Fabric Loader funciona igual en ambas versiones, así que se comparte.
+deps.loader = "0.19.3"
+deps.loom = "1.17-SNAPSHOT"
+deps.modmenu = "17.0.1-beta.1"
+
+# ---- Propiedades específicas por versión ----
+# Cada bloque [ "x.y.z" ] sobreescribe/agrega propiedades solo para esa versión.
+
+["1.21.8"]
+mod.mc_compat = "1.21.8"
+deps.fabric_api = "0.136.1+1.21.8"
+
+["1.21.11"]
+mod.mc_compat = "1.21.11"
+deps.fabric_api = "0.141.6+1.21.11"

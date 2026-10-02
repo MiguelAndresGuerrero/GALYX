@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "galyx",
+	"version": "${version}",
+	"name": "GALYX",
+	"description": "GALYX (Guardian Ancestral de Leyendas Y eXpediciones): detecta jefes vanilla y de OlympoMC, con HUD configurable, avisos de horario y confirmacion de derrotas por loot.",
+	"authors": [
+		"DR3XNATION"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/galyx/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.galyx.GALYX"
+		],
+		"client": [
+			"com.galyx.client.GALYXClient"
+		],
+		"modmenu": [
+			"com.galyx.client.GalyxModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"galyx.mixins.json",
+		{
+			"config": "galyx.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "${minecraft}",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

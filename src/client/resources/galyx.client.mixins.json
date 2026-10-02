@@ -1,0 +1,10 @@
+{
+	"required": true,
+	"package": "com.galyx.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin",
+		"BossHealthOverlayMixin",
+		"GuiActionBarMixin"
+	]
+}
